@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+/*Initialisation de la page*/
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Alata', sans-serif;
+}
+
+/*---------------------------------------HEADER---------------------------------------*/
+/*Initialisation header*/
+header {
+    background-color: #fff;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    padding: 10px 3%;
+    width: 100%;
+    box-shadow: 7px 9px 41px rgba(0, 0, 0, 0.13);
+}
+
+/*Police navigation, decorations*/
+header li, header a {
+    font-family: 'Alata', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color : #4E4E4E;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header li a.test {
+    color: #f088c8;
+    font-weight: 900;
+}
+
+/*Image Lapin*/
+.p-lapin {
+    width: 100px;
+    height: 100px;
+}
+
+/*Decoration nav*/
+.nav__links {
+    list-style: none;
+}
+
+/*Display de la liste*/
+.nav__links li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+/*Lien hypertext*/
+.nav__links li a.lien {
+    position: relative;
+    padding: 0 10px;
+}
+
+/*Underline pour le hover*/
+.nav__links li a.lien:after {
+    content: "";
+    border-radius: 10px;
+    position: absolute;
+    background-color: #BD9785;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+/*Underline actif*/
+.nav__links li a.lien:hover:after {
+    width: 100%;
+}
+
+.nav__links li a#actif:after {
+    width: 100%;
+}
+
+.nav__links li a.test:after {
+    content: "";
+    border-radius: 10px;
+    position: absolute;
+    background-color: #f088c8;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+/*Underline actif*/
+.nav__links li a.test:hover:after {
+    width: 100%;
+}
+
+.nav__links li a#actif:after {
+    width: 100%;
+}
+
+/*Logo Petit bateau*/
+.p-bateau {
+    position: absolute;
+    width: 165px;
+    height: 93px;
+    right: 10px;
+    bottom: 20px;
+}
+
+.revend {
+    position: absolute;
+    right: 170px;
+    bottom: 50px;
+    cursor: default;
+    color: #112351;
+}
+
+.revend2 {
+    visibility: hidden;
+    position: absolute;
+    width: 200px;
+    text-align: center;
+    right: 10px;
+    bottom: 35px;
+    cursor: default;
+    color: #112351;
+}
+
+/*---------------------------------------FOOTER---------------------------------------*/
+/*Initialisation Footer*/
+footer {
+    position: absolute;
+    bottom: 0;
+    vertical-align: middle;
+    background-color: #BD9785;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    padding: 50px 3%;
+    width: 100%;
+    box-shadow: 7px 9px 41px rgba(0, 0, 0, 0.13);
+}
+
+/*Police navigation, decorations*/
+footer li,  footer a {
+    font-family: 'Alata', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color : #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+/*Footer nav*/
+.foot__links {
+    list-style: none;
+}
+
+/*Display de la liste*/
+.foot__links li {
+    display: inline-block;
+    padding: 0px 30px;
+}
+
+/*Lien hypertext*/
+.foot__links li a {
+    position: relative;
+    padding: 0 20px;
+}
+
+/*Underline pour le hover*/
+.foot__links li a:after {
+    content: "";
+    border-radius: 10px;
+    position: absolute;
+    background-color: #fff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+/*Underline actif*/
+.foot__links li a:hover:after {
+    width: 100%;
+}
+
+.foot__links li a#actif::after{
+    width: 100%;
+}
+
+/**!-----------------RESPONSIVE DESIGN-------------------------*/
+
+@media(max-width: 1280px) {
+    .p-bateau {
+        visibility: hidden;
+    }
+    .revend {
+        visibility: hidden;
+    }
+    .revend2 {
+        visibility: visible;
+    }
+}
+
+@media(max-width: 1080px) {
+    footer {
+        visibility: hidden;
+    }
+    .revend2 {
+        visibility: hidden;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav__links {
+        display: none;
+    }
+}
