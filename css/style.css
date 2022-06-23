@@ -20,13 +20,13 @@
 
 .container-acc {
     position: relative;
-    height: 2350px;
+    height: 2550px;
     overflow-x: hidden;
 }
 
 .container-mag {
     position: relative;
-    height: 250vh;
+    height: 2350px;
     overflow-x: hidden;
 }
 
@@ -36,15 +36,21 @@
     overflow-x: hidden;
 }
 
-.container-vit {
+.container-con {
     position: relative;
-    height:  3000px;
+    height: 1080px;
     overflow-x: hidden;
 }
 
-.container-con {
+.container-nais {
     position: relative;
-    height: 115vh;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.container-eng {
+    position: relative;
+    height: 2000px;
     overflow-x: hidden;
 }
 
@@ -57,9 +63,7 @@ h1, h2, h3, h4, h5, h6 {
 .title h2 {
     z-index: 1;
     position: absolute;
-    max-width: 949px;
-    max-height: 188px;
-    left: 106px;
+    left: 50px;
     top: 277px;
     font-family: 'Ecolier';
     font-weight: 500;
@@ -72,9 +76,8 @@ h1, h2, h3, h4, h5, h6 {
 .title h4 {
     z-index: 1;
     position: absolute;
-    max-width: 850px;
-    height: auto;
-    left: 106px;
+    max-width: 700px;
+    left: 50px;
     top: 400px;
     font-weight: 400;
     font-size: 30px;
@@ -86,8 +89,8 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     width: 227px;
     height: 60px;
-    left: 106px;
-    top: 540px;
+    left: 50px;
+    top: 590px;
     border: 3px solid #BD9785;
     border-radius: 37px;
     background-color: #fff;
@@ -111,6 +114,10 @@ h1, h2, h3, h4, h5, h6 {
     z-index: -1;
 }
 
+.p-magasin-banner {
+    display: none;
+}
+
 /*?---------------------------------------ACCUIEL + GALERIE---------------------------------------*/
 /*Initialisation partie galerie*/
 .galerie .text-gal {
@@ -123,15 +130,13 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     width: 393px;
     height: 188px;
-    left: 92px;
+    left: 50px;
     top: 0px;
     font-family: 'Ecolier';
     font-weight: 500;
     font-size: 150px;
     color: #BD9785;
 }
-
-/*Description Galerie*/
 
 /*Ensemble grille Galerie*/
 .grid-gal {
@@ -156,7 +161,6 @@ h1, h2, h3, h4, h5, h6 {
 .grid-item, .grid-item img {
     width: 400px;
     height: 280px;
-    background: #333;
     transition: 0.3s;
     z-index: 1;
     border-radius: 10px;
@@ -173,9 +177,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Un item de la grille précis*/
 .grid-item:nth-child(1) img {
+    height: auto;
     position: relative;
-    top: -50px;
-    height: 500px;
+    top: -80px;
 }
 
 .grid-item:nth-child(2) img {
@@ -211,10 +215,17 @@ h1, h2, h3, h4, h5, h6 {
     top: -170px;
 }
 
+.grid-item:nth-child(8) img {
+    position: relative;
+    top: 20px;
+    transform: scale(1.3);
+    height: auto;
+}
+
 .grid-item:nth-child(10) img {
     position: relative;
-    height: 400px;
-    top: -30px;
+    height: 600px;
+    top: -150px;
 }
 
 .grid-item:nth-child(11) img {
@@ -231,24 +242,32 @@ h1, h2, h3, h4, h5, h6 {
     left: -30px;
 }
 
-/*Bouton Galerie*/
-.btn-gal {
-    position: absolute;
-    width: 225px;
-    height: 60px;
-    left: 43%;
-    top: 2100px;
-    border: 3px solid #BD9785;
-    border-radius: 30px;
-    background-color: #fff;
-    font-size: 20px;
-    color: #BD9785;
+.grid-item:nth-child(13) img {
+    height: auto;
+    position: relative;
+    top: -50px;
 }
 
-.btn-gal:hover, .btn-gal-a:hover a {
-    background-color: #BD9785;
-    color: #fff;
-    cursor: pointer;
+.grid-item:nth-child(14) img {
+    position: relative;
+    height: 600px;
+    top: -180px;
+}
+
+.grid-item:nth-child(15) img {
+    position: relative;
+    height: 600px;
+    top: -130px;
+}
+
+.grid-item:nth-child(16) img {
+    position: relative;
+    top: -50px;
+    height: 500px;
+}
+
+.img-gal {
+    display: none;
 }
 
 /*?---------------------------------------MAGASIN---------------------------------------*/
@@ -256,7 +275,7 @@ h1, h2, h3, h4, h5, h6 {
 .constance img {
     position: absolute;
     width: 1920px;
-    height: 710px;
+    height: auto;
     left: 0px;
     top: 120px;
     z-index: 0;
@@ -265,10 +284,9 @@ h1, h2, h3, h4, h5, h6 {
 /*Description magasin*/
 .constance h4 {
     position: absolute;
-    width: 1828px;
-    height: 82px;
+    max-width: 1828px;
     left: 58px;
-    top: 730px;
+    top: 650px;
     font-weight: 400;
     font-size: 30px;
     color: #4E4E4E;
@@ -291,7 +309,6 @@ h1, h2, h3, h4, h5, h6 {
 .representantes h4 {
     position: absolute;
     width: 740px;
-    height: 205px;
     left: 960px;
     top: 1150px;
     font-weight: 400;
@@ -302,15 +319,14 @@ h1, h2, h3, h4, h5, h6 {
 /*Photo representantes*/
 .representantes img {
     position: absolute;
-    width: 864px;
-    height: 486px;
+    max-width: 864px;
     left: 58px;
     top: 993px;
     border-radius: 22px;
 }
 
 /*Coin jeu*/
-    .coin-jeu h1 {
+.coin-jeu h1 {
     position: absolute;
     width: 500px;
     left: 58px;
@@ -342,6 +358,34 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 22px;
 }
 
+.magasin {
+    position: relative;
+    top: 2200px;
+    left: 58px;
+}
+
+.magasin h1 {
+    font-family: 'Ecolier';
+    font-weight: 500;
+    font-size: 100px;
+    color: #BD9785;
+}
+
+.magasin img {
+    height: 500px;
+    width: 400px;
+    margin: 0 20px;
+    border-radius:30px;
+    transition: 0.3s;
+}
+
+.magasin img:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+    box-shadow: 11px 7px 26px 0px rgba(0,0,0,0.26);
+    z-index: 2;
+}
+
 /*?---------------------------------------CONTACT---------------------------------------*/
 .situer h2 {
     position: absolute;
@@ -356,8 +400,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .situer iframe {
     position: absolute;
-    width: 1180px;
-    height: 540px;
     left: 75px;
     top: 280px;
     border: 0;
@@ -704,6 +746,8 @@ h1, h2, h3, h4, h5, h6 {
     z-index: -2;
 }
 
+/*?------------------------Liste de naissance----------------------*/
+
 .error {
     position: relative;
     top: 160px;
@@ -712,164 +756,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #333;
     font-size: 30px;
     font-weight: 500;
+    z-index: -2;
 }
 
 .error span {
     color: #f088c8;
-}
-
-/*Ensemble grille Galerie*/
-.grid-vit {
-    position: relative;
-}
-
-.grille-vit {
-    position: absolute;
-    max-width: 2000px;
-    width: 90%;
-    height: auto;
-    top: 250px;
-    left: 6%;
-    margin: 30px auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 400px); 
-    justify-content: center;
-    align-items: center;
-    grid-gap: 10px;
-}
-
-/*Un item de la grille*/
-.grid-item-vit, .grid-item-vit img {
-    width: 400px;
-    height: 280px;
-    background-color: #fff;
-    transition: 0.3s;
-    z-index: 1;
-    border-radius: 10px;
-    overflow: hidden;
-}
-
-.grid-item-vit:hover {
-    transform: scale(1.3);
-    transition: 0.3s;
-    box-shadow: 11px 7px 26px 0px rgba(0,0,0,0.26);
-    z-index: 2;
-}
-.grille-vit h1 {
-    padding: 50% 20px;
-    height: 100%;
-    border:  3px solid #BD9785;
-    border-radius: 10px;
-}
-
-.grid-item-vit:nth-child(2) img {
-    position: relative;
-    top: -75px;
-    height: 400px;
-    width: 400px;
-}
-
-.grid-item-vit:nth-child(3) img {
-    position: relative;
-    left: 50px;
-    height: 300px;
-    width: 300px;
-}
-
-.grid-item-vit:nth-child(4) img {
-    position: relative;
-    left: 50px;
-    height: 300px;
-    width: 300px;
-}
-
-.grid-item-vit:nth-child(6) img {
-    position: relative;
-    left: 50px;
-    height: 300px;
-    width: 300px;
-}
-
-.grid-item-vit:nth-child(8) img {
-    position: relative;
-    left: 50px;
-    height: 300px;
-    width: 300px;
-}
-
-.grid-item-vit:nth-child(8) {
-    background-color: #f3f3f3;
-}
-
-.grid-item-vit:nth-child(10) img {
-    position: relative;
-    top: -120px;
-    left: -50px;
-    height: 600px;
-    width: 500px;
-}
-
-.grid-item-vit:nth-child(11) img {
-    position: relative;
-    height: 500px;
-    width: 500px;
-    top: -90px;
-    left: -50px;
-}
-
-.grid-item-vit:nth-child(12) img {
-    position: relative;
-    top: -200px;
-    left: -50px;
-    height: 500px;
-    width: 500px;
-}
-
-.grid-item-vit:nth-child(14) img {
-    position: relative;
-    top: -120px;
-    left: -50px;
-    height: 500px;
-    width: 500px;
-}
-
-.grid-item-vit:nth-child(15) img {
-    position: relative;
-    left: 50px;
-    height: 280px;
-    width: 280px;
-}
-
-.grid-item-vit:nth-child(15) {
-    background-color: #fefefe;
-}
-
-.grid-item-vit:nth-child(16) img {
-    position: relative;
-    top: -90px;
-    left: -50px;
-    height: 500px;
-    width: 500px;
-}
-
-.grid-item-vit:nth-child(18) img {
-    position: relative;
-    top: -200px;
-    height: 600px;
-    width: 500px;
-}
-
-.grid-item-vit:nth-child(19) img {
-    position: relative;
-    top: -150px;
-    height: 500px;
-    width: 400px;
-}
-
-.grid-item-vit:nth-child(20), .grid-item-vit:nth-child(20):hover {
-    transform: none;
-    box-shadow: none;
-    z-index: -2;
 }
 
 /*?-------------------Engagements-------------------*/
@@ -886,7 +777,7 @@ h1, h2, h3, h4, h5, h6 {
     z-index: -2;
     top: -250px;
     left: -80px;
-    height: 250px;
+    max-height: 250px;
 }
 
 .text-eng p {
@@ -912,79 +803,8 @@ h1, h2, h3, h4, h5, h6 {
     content: '- ';
 }
 
-
-
-
-
-
-
-
-/*!-----------------RESPONSIVE DESIGN-------------------------*/
-@media(max-width: 1700px) {
-    .container-acc {
-        height: 2800px;
-    }
-
-    .btn-gal {
-        top: 2570px;
-    }
-}
-
-@media(max-width: 1372px) {
-    .container-acc {
-        height: 3380px;
-    }
-
-    .btn-gal {
-        top: 3150px;
-    }
-}
-
-@media(max-width: 1080px) {
-    .p-magasin {
-        visibility: hidden;
-    }
-}
-
-@media(max-width: 915px) {
-    .container-acc {
-        height: 5000px;
-    }
-
-    .btn-gal {
-        top: 4900px;
-        left: 330px;
-    }
-}
-
-@media(max-width: 900px) {
-    .title h2 {
-        left: 20px;
-        top: 120px;
-        font-size: 70px;
-        min-width: 450px;
-        transition: 0.3s;
-    }
-    .presentation h4 {
-        display: flex;
-        font-size: 20px;
-        left: 40px;
-        top: 240px;
-    }
-
-    .btn-acc {
-        left: 40px;
-        top: 370px;
-    }
-}
-
-@media (max-width:414px) {
-    .presentation h4 {
-        width: 350px;
-    }
-    .btn-acc {
-        transform: scale(0.8);
-        left: 20px;
-        top: 470px;
-    }
+.pdf {
+    position: absolute;
+    left: 30%;
+    top: 800px;
 }
