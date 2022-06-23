@@ -6,55 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="icon" type="image/png" href="img/lapin.png">
     <title>CONSTANCE & LOUIS - Votre magasin de vêtements pour enfants</title>
 </head>
 <body>
+    <div class="container-acc ">
 
-    <!--
-        A____A
-        |・ㅅ・|    Miaou Miaou !
-        |っ　ｃ|
-        |　　　|
-        |　　　|
-        |　　　|
-        |　　　|
-        |　　　|
-        U￣￣U
-    -->
-    <div class="container-acc">
 
-        <!--Header-->
-        <header>
-            <a href="index.html"><img src="img/lapin.png" class="p-lapin"></a>
-            <nav class="navbar">
-                <ul class="nav__links">
-                    <li><a class="lien" id="actif" href="">Accueil</a></li>
-                    <li><a class="lien"  href="/constanceetlouis/pages/magasin.html">Magasin</a></li>
-                    <li><a class="lien"  href="/constanceetlouis/pages/marques.html">Nos marques</a></li>
-                    <li><a class="lien" href="/constanceetlouis/pages/vitrine.html">Galerie</a></li>
-                    <li><a class="lien" href="/constanceetlouis/pages/engagement.html">Nos engagements</a></li>
-                    <li><a class="lien test" href="/constanceetlouis/pages/naissance.html"><strong>Liste de naissance</strong></a></li>
-                    <li><a class="revend">Revendeur officiel</a></li>
+        <!-- Barre de navigation -->
+        <nav class="navbar">
+            <a href="" class="logo"><img src="/img/lapin.png"></a>
+            <div class="nav-links ">
+                <ul>
+                    <img src="/img/lapin.png" alt="">
+                    <li><a href="" id="actif">Accueil</a></li>
+                    <li><a href="/pages/magasin.html">Magasin</a></li>
+                    <li><a href="/pages/marques.html">Nos marques</a></li>
+                    <li><a href="/pages/engagement.html">Seconde main</a></li>
+                    <li><a href="/pages/naissance.html" class="gras">Liste de naissance</a></li>
                 </ul>
-                <a href="https://www.petit-bateau.fr" target="_blank"><img src="img/petit-bateau.png" class="p-bateau"></a>
-            </nav>
-        </header>
+            </div>
+            <p class="revend1">Revendeur Officiel</p>
+            <p class="revend2">Revendeur Officiel Petit Bateau</p>
+            <a href="https://www.petit-bateau.fr" target="_blank"><img src="img/petit-bateau.png" class="p-bateau"></a>
+            <div class="menu-hamburger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                    <path color="#BD9785" fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+            </div>
+        </nav>
 
-        <!--Accueil Site-->
+        <!-- Page d'acceuil-->
         <div class="title">
             <p><h2>Constance et Louis</h2></p>
             <div class="presentation">
-                <p><h4>Constance et Louis est un magasin indépendant<br>multimarques basé à Cambrai, pour les enfants<br>de 0 à 10 ans</h4></p>
-                    <a href="/constanceetlouis/pages/magasin.html" class="btn-acc-a"><button class="btn-acc">Voir le magasin</button></a>
+                <p><h4>Constance et Louis est un magasin indépendant familial et multimarques. Basé à Cambrai, il vous propose des vêtements et accessoires pour les petits et les grands jusqu'à 10 ans!</h4></p>
+                    <a href="pages/magasin.html" class="btn-acc-a"><button class="btn-acc">Voir le magasin</button></a>
                 <img src="img/photo1.png" class="p-magasin">
+                <img src="img/photo2.png" class="p-magasin-banner">
             </div>
         </div>
 
-        <!--Galerie dans l'acceuil-->
+        <!-- Galerie -->
         <div class="galerie">
             <div class="text-gal">
-                <p><h2>Galerie</h2></p>
+                <h2>Galerie</h2>
             </div>
             <div class="grid-gal">
                     <div class="grille">
@@ -72,21 +69,32 @@
                         <div class="grid-item"><img src="img/gal10.jpg"></div>
                         <div class="grid-item"><img src="img/gal11.jpg"></div>
                         <div class="grid-item"><img src="img/gal12.jpg"></div>
+
+                        <div class="grid-item"><img src="img/gal13.jpg"></div>
+                        <div class="grid-item"><img src="img/gal14.jpg"></div>
+                        <div class="grid-item"><img src="img/gal15.jpg"></div>
+                        <div class="grid-item"><img src="img/gal16.jpg"></div>
                 </div>
             </div>
-            <a href="/constanceetlouis/pages/vitrine.html" class="btn-gal-a"><button class="btn-gal">Voir la galerie</button></a>
         </div>
-
-        <!--Footer-->
         <footer>
             <nav class="footerBar">
                 <ul class="foot__links">
-                    <li><a href="/constanceetlouis/pages/mentions_legales.html">Mentions légales</a></li>
-                    <li><a href="/constanceetlouis/pages/plan.html">Plan du site</a></li>
-                    <li><a href="/constanceetlouis/pages/contact.html">Contact</a></li>
+                    <li><a href="/pages/mentions_legales.html">Mentions légales</a></li>
+                    <li><a href="/pages/plan.html">Plan du site</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </footer>
     </div>
 </body>
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger")
+        const navLinks = document.querySelector(".nav-links")
+        const coprs = document.querySelector(".container-acc")
+
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+    </script>
 </html>
